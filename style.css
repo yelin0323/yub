@@ -1,0 +1,33 @@
+h1{
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding:10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+#grid ol{
+  list-style: none;
+  border-right: 1px solid gray;
+  width: 50px;
+  height: 300px;
+  margin: 0;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding 10px;
+}
+
+#grid #article{
+  padding-left: 10px;
+}
