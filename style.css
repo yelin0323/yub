@@ -1,54 +1,84 @@
-
-
-a{
-  text-decoration: none;
-
+html, body{
+  height : 100%;
+  width : 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-#grid{
+#nav{
+  height: 22vh;
+  width: 100vw;
+}
 
+#nav #mainlist{
+  position: absolute; right: 0px;
   list-style: none;
-  display: grid;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-template-columns: 1fr 150px 150px 150px 1fr;
-  grid-template-rows: 300px 100px 100px 30px 300px;
-  text-align: center;
 }
 
-h1{
-  font-size: 50px;
-  font-style: normal;
-  text-align: center;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+li{
+  float: left;
+  padding: 8px;
 }
 
-.item1{
-  border-top: 1px solid gray;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-.item2{
-  border-top: 1px solid gray;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-.item3{
-  border-top: 1px solid gray;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 4;
-
+#mg{
+  height: 24px;
+  width: 24px;
 }
 
-#bottom{
-  border-top: 1px solid gray;
+#yublogo{
+  height: 7vw;
+  width: 20vw;
+  margin-right: 40vw;
+  margin-left: 40vw;
+  margin-bottom: 1vh;
+}
+
+input{
+  height: 3vw;
+  width: 30vw;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  padding-left: 15px;
+  font-size: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3%;
+  box-shadow: 0px 3px 0px 0px #e5e5e5;
+}
+
+button{
+  height: 4vw;
+  width: 10vw;
+  background-color: #f6f6f6;
+  font-size: 1vw; color: #222222;
+  margin-top: 3vh;
+  border: 1px solid #e4e4e4;
+}
+
+#footer{
+  position: absolute; bottom: 30px;
+  height: 30px; width: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid #e4e4e4;
+  padding-bottom: 1px;
+}
+
+#footer h3{
+  font-size: 15px;
+  margin-top: 1px;
+}
+
+#footer2{
+  position: absolute; bottom: 0px;
+  height: 30px; width:100%;
+  background-color: #f3f3f3;
+  border: 1px solid #e4e4e4;
+}
+
+#secondlist{
+  height: 20px; width: 100vw;
+  list-style: none;
+  color: #6f6f6f;
+  margin-left: -25px;
+  margin-top: -7px;
+
 }
