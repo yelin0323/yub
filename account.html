@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Account</title>
     <link rel="stylesheet" type="text/css" href="style_acnt.css">
+    <script src="search.js"></script>
   </head>
   <body>
     <div>
@@ -11,15 +12,39 @@
           <ul id="mainlist">
             <li><a href="index.html"><img id="logo" src="yuuble2.png"></a></li>
             <li>계정</li>
-            <li><input type="text" name="search" value=""></li>
+            <li><input id="searchbox" type="text" onchange="alert('오늘은 쉽니다.'); nullSearchbox();"></li>
           </ul>
       </div>
 
+      <div id="middle">
+        <h1><img id="yubaccount" src="yubaccount.png"></h1>
+        <h2>Yubin님, 환영합니다.</h2>
+      </div>
 
+      <div id="season">
+        <div id="spring"><h4>Spring</h4><p>봄의 날씨만큼 따뜻한 유빈이를 볼 수 있어요.</p>
+          <button>봄의 유빈이 보러가기</button>
+        </div>
+        <div id="summer"><h4>Summer</h4><p>햇빛보다 빛나는 유빈이를 볼 수 있어요.</p>
+          <button>여름의 유빈이 보러가기</button>
+        </div>
+        <div id="fall"><h4>Fall</h4><p>단풍보다 아름다운 유빈이를 볼 수 있어요.</p>
+          <button>가을의 유빈이 보러가기</button>
+        </div>
+        <div id="winter"><h4>Winter</h4><p>눈보다 하얀 유빈이를 볼 수 있어요.</p>
+          <button>겨울의 유빈이 보러가기</button>
+        </div>
+      </div>
 
       <div id="footer">
-        <h3 style="color: #6f6f6f; padding-left: 20px;">Korean</h3>
+        <form>
+          <select id = countries name="countries">
+            <option value="1">Korea</option>
+            <option value="2">Yubin</option>
+          </select>
+        </form>
       </div>
+
       <div id="footer2">
         <ul id="secondlist">
           <li>Advertising</li>

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>yuuble.com</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="search.js"></script>
+
   </head>
   <body>
     <div>
@@ -16,20 +18,21 @@
           <li><a href="account.html"><img id="mg" src="account.jpg"></a></li>
         </ul>
       </div>
-      <h1><img id="yublogo" src="yuuble2.png"></h1>
+        <h1><img id="yublogo" src="yuuble2.png"></h1>
       <div>
-        <input type="text" onchange="alert('오늘은 쉽니다.')">
-        <!--
-        <div style= "margin-top:-36px; margin-left:65vw;">
-          <img style="height:20px; cursor : pointer; "src="micro.jpg">
-        </div>
-      -->
+        <input id = "searchbox" type="text" onchange="alert('오늘은 쉽니다.'); nullSearchbox();">
+
       </div>
       <button style="margin-left:40vw">yuuble Search</button>
       <button style="margin-left:10px">Feeling Lucky</button>
 
       <div id="footer">
-        <h3 style="color: #6f6f6f; padding-left: 20px;">Korean</h3>
+        <form>
+          <select id = countries name="countries">
+            <option value="1">Korea</option>
+            <option value="2">Yubin</option>
+          </select>
+        </form>
       </div>
 
       <div id="footer2">
@@ -41,7 +44,5 @@
         </ul>
       </div>
     </div>
-
-
   </body>
 </html>
